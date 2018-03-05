@@ -19,7 +19,7 @@ const products = {
 		buylink: "https://www.esteelauder.co.uk/product/681/26959/product-catalog/skincare/advanced-night-repair/synchronized-recovery-complex-ii",
 		assistant: "https://www.esteelauder.co.uk/product/681/39367/product-catalog/skincare/advanced-night/micro-cleansing-foam"
 	},
-    "not an estee product": {
+    "this is not an estee beauty product": {
         title: "oops",
         description: "try taking this photo again",
         buylink: "https://www.esteelauder.co.uk/product/681/26959/product-catalog/skincare/advanced-night-repair/synchronized-recovery-complex-ii",
