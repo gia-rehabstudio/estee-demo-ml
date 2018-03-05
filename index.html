@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="WebRTC code samples">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+  <meta itemprop="description" content="Client-side WebRTC code samples">
+  <meta itemprop="name" content="WebRTC code samples">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta id="theme-color" name="theme-color" content="#ffffff">
+
+  <link href="./css/main.css" rel="stylesheet"></link>
+
+  <title>Estée Demo</title>
+
+</head>
+
+<body>
+  <script id="entry-template" type="text/x-handlebars-template">
+    <div id="myProgress" width="500px">
+        <div id="myBar" style="width: {{percentage}}%">
+          <span>{{percentage}}% match</span>
+        </div>
+    </div>
+  </script>
+
+  <script id="product" type="text/x-handlebars-template">
+    <div class="product-description">
+        <p class="product-description-stats">This product has a {{percentage}}% chance of being</p>
+        <h3 class="product-description--title">{{title}}</h3>
+        <p class="product-description--p">{{description}}</p>
+        <a
+        class="product-cta"
+        href="{{buylink}}">
+        BUY NOW
+        </a>
+        <a
+        class="product-cta"
+        href="{{assistantlink}}">
+         GOOGLE ASSISTANT
+        </a>
+    </div>
+  </script>
+
+<nav>
+    <ul>
+        <li>
+            <a href="about.html">ABOUT</a>
+        </li>
+    </ul>
+    <p class="subtitle" >For the most accurate experience, use a solid white background.</p>
+</nav>
+
+  <div id="container" class="play">
+    <div id="cam">
+      <div id="inner">
+        <video autoplay playsinline></video>
+        <canvas></canvas>
+        <div id="controls">
+          <button class="take" id="take">📸</button>
+          <button class="take" id="take-again">📷</button>
+        </div>
+      </div>
+    </div>
+    <div id="results"></div>
+  </div>
+
+  <script src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

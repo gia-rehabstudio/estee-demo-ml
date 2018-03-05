@@ -1,0 +1,4 @@
+name: estee-demo
+recipe: lamp
+config:
+  webroot: .
