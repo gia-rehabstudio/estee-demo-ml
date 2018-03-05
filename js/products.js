@@ -14,10 +14,16 @@ const products = {
 		assistant: "https://www.esteelauder.co.uk/product/681/39367/product-catalog/skincare/advanced-night/micro-cleansing-foam"
 	},
 	"human face": {
-		title: "What a lovely human face!",
+		title: "a lovely human face!",
 		description: "Make it look as radiant as possible with Estée Lauder",
 		buylink: "https://www.esteelauder.co.uk/product/681/26959/product-catalog/skincare/advanced-night-repair/synchronized-recovery-complex-ii",
 		assistant: "https://www.esteelauder.co.uk/product/681/39367/product-catalog/skincare/advanced-night/micro-cleansing-foam"
-	}
+	},
+    "not an estee product": {
+        title: "oops",
+        description: "try taking this photo again",
+        buylink: "https://www.esteelauder.co.uk/product/681/26959/product-catalog/skincare/advanced-night-repair/synchronized-recovery-complex-ii",
+        assistant: "https://www.esteelauder.co.uk/product/681/39367/product-catalog/skincare/advanced-night/micro-cleansing-foam"
+    }
 
 };
